@@ -1,0 +1,32 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Pytest cache
+.pytest_cache/
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
