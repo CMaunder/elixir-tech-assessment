@@ -1,0 +1,11 @@
+At Elixir, we use React/TypeScript and Python/Django on the frontend and backend respectively. As part of this assessment, we ask you to create a clone of the popular NYT game Wordle. Your app:
+
+- Needs to use React w/ TypeScript front-end w/ a Python Django backend.
+- Host on your typical git repository and give instructions/commands on how to run.
+- Bonus points for using: Django Rest Framework, Redux Toolkit & Test Driven Development.
+
+Feel free to use any tool that will help you on this test.
+
+We recognise that this could be a fairly complex task so don't worry if you don't finish the task completely - we really just want to see your thought processes and how you approach the challenge.
+
+Happy Coding!

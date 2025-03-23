@@ -1,0 +1,45 @@
+Wordle:
+    6 tires
+    5 letter word 
+    if letter guessed is in the final word but wrong location - goes yellow upon submission
+    if letter guessed in word is in the final word and in correct place - goes green upon submission
+
+
+conditions:
+    in order to submit, the 5 letter word guess must be a word
+    
+additional notes:
+    the available letter board should change colour to reflect current state
+
+
+Backend notes:
+    django views should be sufficient, over viewsets
+    tables - 
+        user - id only
+        game - id, letter_status?, guessed word array, status (in progress, complete, abbondonded), fk user (as each game can only have one user), 
+            correct_word (initalized randomly upon creation), guess_count can be a @property
+    
+    
+    apis needed for:
+        user/{uuid}/games?status=active GET - checks if a game exists for user, returns below if it does, if not return 404
+
+        /game POST - should take the user id in the body, create a new game entry in backend, randomly select the word and save it to correct_word.
+            Should return array of selectable character objects of type = {letter: string, colour: string }, guessed word array, game status, and game id, guess_count, game_status.
+        
+        
+        /game PATCH - this should take the game id and the guessed word entry, and output the same as the POST endpoint. 
+            Should process the guessed_word array, and provide the updated game_status. If word is not valid (length, not a real word return 400)
+
+        /game DELETE - abbandon the game (probably dont need to implement this for this exercise)
+        need access to all 5 letter words in the english dictionary
+
+
+Frontend notes:
+    useEffect should call load_game api, if any in progress games are found use data from load_game, else if 404, call start_game.
+    each letter cell should be a component
+    store user UUID in local storage
+
+user docker compose to pack it all up neatly
+
+
+
