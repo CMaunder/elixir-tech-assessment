@@ -81,3 +81,4 @@ Happy wordle-ing! 💻✨
 - Add **unit tests for the frontend** to improve reliability.
 - Increase **unit test coverage for the backend**.
 - Implement **user authentication** for a more personalized experience.
+- Allowed words should be in the database
