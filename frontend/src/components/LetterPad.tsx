@@ -43,7 +43,7 @@ export default function LetterPad({
             <LetterButton
               key={letter}
               letter={letter}
-              status={game.letterStatus[letter] || "default"}
+              status={game.letterStatus[letter] || ""}
               setCurrentGuess={setCurrentGuess}
             />
           ))}

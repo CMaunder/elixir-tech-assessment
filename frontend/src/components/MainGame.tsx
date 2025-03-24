@@ -9,7 +9,6 @@ type ErrorMessage = {
 };
 
 const baseEndpoint = "http://localhost:8000/game-engine";
-// const baseEndpoint = "http://192.168.1.72:8000/game-engine";
 
 const loadGame = async (): Promise<Game> => {
   const userId: string | null = window.localStorage.getItem("userId");

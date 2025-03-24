@@ -1,6 +1,18 @@
-# 🚀 Elixir Tech Assessment
+# 🚀 Elixir Tech Assessment - Charlie Maunder
 
 This README will guide you through the startup process for both the backend and frontend components of the application. Let's get started! 🎉
+
+---
+
+## 📌 Requirements
+
+### Backend Requirements
+- Python (>=3.8)
+- Pipenv (for dependency management)
+
+### Frontend Requirements
+- Node.js (>=16.0.0)
+- npm (>=8.0.0)
 
 ---
 
@@ -28,6 +40,16 @@ This README will guide you through the startup process for both the backend and 
     python manage.py runserver
     ```
 
+### Running Backend Tests
+To run the backend tests using `pytest`, use the following command:
+```bash
+pytest
+```
+If `pytest` is not installed, you can add it to your environment:
+```bash
+pipenv install pytest
+```
+
 ### Frontend Setup
 1. Open a new terminal and navigate to the `frontend` directory:
     ```bash
@@ -51,3 +73,13 @@ Now you can access the application:
 - 🌐 **Frontend**: Running at `http://localhost:5173`
 
 Happy wordle-ing! 💻✨
+
+---
+
+## 🔮 Future Work
+
+- Implement a **daily global word refresh** feature.
+- Clean up inline TODOs related to **performance improvements** and **code DRY-ness**.
+- Add **unit tests for the frontend** to improve reliability.
+- Increase **unit test coverage for the backend**.
+- Implement **user authentication** for a more personalized experience.
