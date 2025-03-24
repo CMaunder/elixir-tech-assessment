@@ -68,9 +68,7 @@ pipenv install pytest
 
 ## 🎯 You're All Set!
 
-Now you can access the application:
-- 🌐 **Backend**: Running at `http://localhost:8000`
-- 🌐 **Frontend**: Running at `http://localhost:5173`
+Now you can access the UI running at `http://localhost:5173`
 
 Happy wordle-ing! 💻✨
 
