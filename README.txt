@@ -23,7 +23,7 @@ This README will guide you through the startup process for both the backend and 
     ```bash
     cd backend
     ```
-2. Install the required Python dependencies using `pipenv`:
+2. Install the required Python dependencies using `pipenv` (see: https://pipenv.pypa.io/en/latest/installation.html):
     ```bash
     pipenv install
     ```
