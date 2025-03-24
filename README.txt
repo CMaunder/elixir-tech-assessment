@@ -80,7 +80,6 @@ Happy wordle-ing! 💻✨
 - Clean up inline TODOs related to **performance improvements** and **code DRY-ness**.
 - Add **unit tests for the frontend** to improve reliability.
 - Increase **unit test coverage for the backend**.
-- Implement **user authentication** for a more personalized experience.
 - Allowed words should be in the database
 - Animations
 - Dockerize 
