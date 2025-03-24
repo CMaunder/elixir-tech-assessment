@@ -1,6 +1,6 @@
 # 🚀 Elixir Tech Assessment
 
-Welcome to the Elixir Tech Assessment project! This README will guide you through the startup process for both the backend and frontend components of the application. Let's get started! 🎉
+This README will guide you through the startup process for both the backend and frontend components of the application. Let's get started! 🎉
 
 ---
 
