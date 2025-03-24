@@ -18,6 +18,7 @@ export default function GuessGrid({ game, currentGuess }: GuessGridProps) {
 
   const getLetterWithStatus = (index: number) => {
     const letters: LetterWithStatus[] = [];
+    // TODO - guessed words could be wrapped in a useMemo that's recalculated when the 'game' changes
     game.guessedWords.forEach((word) => {
       word.split("").forEach((letter, _) => {
         const letterStatus = game.letterStatus[letter];
