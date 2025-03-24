@@ -4,6 +4,18 @@ This README will guide you through the startup process for both the backend and 
 
 ---
 
+## 📌 Requirements
+
+### Backend Requirements
+- Python (>=3.8)
+- Pipenv (for dependency management)
+
+### Frontend Requirements
+- Node.js (>=16.0.0)
+- npm (>=8.0.0)
+
+---
+
 ## 🛠️ Setup Instructions
 
 ### Backend Setup
