@@ -47,7 +47,7 @@ Welcome to the Elixir Tech Assessment project! This README will guide you throug
 ## 🎯 You're All Set!
 
 Now you can access the application:
-- 🌐 **Backend**: Running at `http://127.0.0.1:8000`
-- 🌐 **Frontend**: Running at `http://localhost:3000`
+- 🌐 **Backend**: Running at `http://localhost:8000`
+- 🌐 **Frontend**: Running at `http://localhost:5173`
 
-Happy coding! 💻✨
+Happy wordle-ing! 💻✨
