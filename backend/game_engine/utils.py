@@ -28,7 +28,7 @@ def evaluate_guess(game, guessed_word):
         raise ValidationError(
             {"message": "Word length is wrong."},
         )
-    if not guessed_word in set(all_words()):  # set for O(1) lookup
+    if not guessed_word.lower() in set(all_words()):  # set for O(1) lookup
         raise ValidationError(
             {"message": "Word is not valid."},
         )
@@ -46,10 +46,12 @@ def evaluate_guess(game, guessed_word):
             == LetterStatus.CORRECT  # handles duplicate letter case if letter is already correct
         ):
             game.letter_status[letter]["status"] = LetterStatus.CONTAINS
+        elif letter not in game.correct_word:
+            game.letter_status[letter]["status"] = LetterStatus.INCORRECT
     if guessed_word == game.correct_word:
         game.game_status = GameStatus.COMPLETE
-    else:
-        game.guessed_words.append(guessed_word)
-
+    elif game.guess_count >= 5:
+        game.game_status = GameStatus.FAILED
+    game.guessed_words.append(guessed_word)
     game.save()
     return game

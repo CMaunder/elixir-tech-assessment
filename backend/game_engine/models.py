@@ -6,14 +6,14 @@ from .constants import LetterStatus, GameStatus
 from .utils import all_words
 
 
-def get_random_word():
-    return random.choice(all_words())
+def get_random_word():  # TODO - change this to get the daily word
+    return random.choice(all_words()).upper()
 
 
 def all_letters():
     return dict(
-        (chr(letter), {"status": LetterStatus.INCORRECT, "locations": []})
-        for letter in range(ord("a"), ord("z") + 1)
+        (chr(letter), {"status": LetterStatus.UNKNOWN, "locations": []})
+        for letter in range(ord("A"), ord("Z") + 1)
     )
 
 
