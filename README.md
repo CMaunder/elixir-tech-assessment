@@ -1,4 +1,4 @@
-# 🚀 Elixir Tech Assessment - Charlie Maunder
+## 🚀 Elixir Tech Assessment - Charlie Maunder
 
 This README will guide you through the startup process for both the backend and frontend components of the application. Let's get started! 🎉
 
