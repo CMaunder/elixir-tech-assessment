@@ -84,3 +84,5 @@ Happy wordle-ing! 💻✨
 - Allowed words should be in the database
 - Animations
 - Dockerize 
+- Show word on failure
+- Keyboard support
