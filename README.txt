@@ -82,3 +82,5 @@ Happy wordle-ing! 💻✨
 - Increase **unit test coverage for the backend**.
 - Implement **user authentication** for a more personalized experience.
 - Allowed words should be in the database
+- Animations
+- Dockerize 
