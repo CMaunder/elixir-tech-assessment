@@ -8,7 +8,7 @@ This README will guide you through the startup process for both the backend and 
 
 ### Backend Requirements
 
-- Python (=3.13)
+- Python
 - Pipenv (for dependency management)
 
 ### Frontend Requirements
