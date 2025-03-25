@@ -9,7 +9,7 @@ This README will guide you through the startup process for both the backend and 
 ### Backend Requirements
 
 - Python
-- Pipenv (for dependency management)
+- venv (for dependency management)
 
 ### Frontend Requirements
 
@@ -26,13 +26,15 @@ This README will guide you through the startup process for both the backend and 
    ```bash
    cd backend
    ```
-2. Install the required Python dependencies using `pipenv` (see: https://pipenv.pypa.io/en/latest/installation.html):
+2. Create and activate a virtual environment:
    ```bash
-   pipenv install
+   python -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   venv\Scripts\activate     # On Windows
    ```
-3. Activate the virtual environment:
+3. Install the required Python dependencies:
    ```bash
-   pipenv shell
+   pip install -r requirements.txt
    ```
 4. Apply database migrations:
    ```bash
@@ -54,7 +56,7 @@ pytest
 If `pytest` is not installed, you can add it to your environment:
 
 ```bash
-pipenv install pytest
+pip install pytest
 ```
 
 ### Frontend Setup
